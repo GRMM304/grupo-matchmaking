@@ -827,6 +827,38 @@ input, select, textarea, button {
     box-shadow: 0 0 10px rgba(244, 177, 96, 0.2);
 }
 
+.form-consent {
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: var(--medium-gray);
+    line-height: 1.5;
+}
+
+.form-consent label {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    cursor: pointer;
+    color: var(--dark-navy);
+}
+
+.form-consent input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    flex-shrink: 0;
+    accent-color: var(--secondary-green);
+}
+
+.form-consent-note {
+    margin: 8px 0 0 28px;
+    font-size: 13px;
+}
+
+.form-consent-note a {
+    color: var(--secondary-green);
+}
+
 .contact-form .btn {
     width: 100%;
     padding: 18px;

@@ -427,6 +427,15 @@
                         <div class="form-group">
                             <textarea name="mensaje" placeholder="Mensaje breve" rows="4"></textarea>
                         </div>
+                        <div class="form-consent">
+                            <label>
+                                <input type="checkbox" id="aceptaPublicidad">
+                                <span>Acepto recibir información comercial y publicidad de Grupo Matchmaking (opcional).</span>
+                            </label>
+                            <p class="form-consent-note">Puedes pedir que modifiquemos o eliminemos tus datos escribiendo a <a href="mailto:contacto@grupomm.cl">contacto@grupomm.cl</a>.</p>
+                            <input type="hidden" name="acepta_publicidad" value="No">
+                            <input type="hidden" name="fecha_consentimiento" value="">
+                        </div>
                         <button type="submit" class="btn btn-primary">Solicitar contacto</button>
                     </form>
                     
@@ -584,6 +593,9 @@
             const originalText = submitBtn.innerHTML;
             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
             submitBtn.disabled = true;
+
+            contactForm.elements['acepta_publicidad'].value = document.getElementById('aceptaPublicidad').checked ? 'Sí' : 'No';
+            contactForm.elements['fecha_consentimiento'].value = new Date().toLocaleString('es-CL', { timeZone: 'America/Santiago' });
 
             fetch(contactForm.action, {
                 method: 'POST',
