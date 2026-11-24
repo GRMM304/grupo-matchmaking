@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <script src="https://vhs-agentes.onrender.com/api/widget/35224608-8030-42c5-9ca9-2af5641c16b8/loader.js" async></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Family Office y Activos Alternativos - Grupo Matchmaking</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .news-detail-page {
+            min-height: 100vh;
+            background: #f5f6f8;
+        }
+        
+        /* Header de la noticia */
+        .news-header {
+            background: linear-gradient(135deg, var(--dark-navy, #1a2332) 0%, #0a0a0a 100%);
+            padding: 2rem 0;
+        }
+        .news-header .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .news-header-logo {
+            height: 50px;
+            width: auto;
+        }
+        .news-header-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: gap 0.3s ease, color 0.3s ease;
+        }
+        .news-header-back:hover {
+            gap: 1rem;
+            color: var(--primary-gold, #f4b160);
+        }
+        
+        /* Contenido principal */
+        .news-detail-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 20px 5rem;
+        }
+        
+        /* Meta información */
+        .news-detail-meta {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #ddd;
+            flex-wrap: wrap;
+        }
+        .news-detail-source {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .news-detail-source img {
+            height: 30px;
+            width: auto;
+        }
+        .news-detail-source span {
+            font-weight: 700;
+            color: var(--dark-navy, #1a2332);
+        }
+        .news-detail-category {
+            color: var(--primary-gold, #f4b160);
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .news-detail-date {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* Título */
+        .news-detail-content h1 {
+            font-size: 2.5rem;
+            color: var(--dark-navy, #1a2332);
+            margin-bottom: 1.5rem;
+            line-height: 1.3;
+        }
+        @media (max-width: 600px) {
+            .news-detail-content h1 {
+                font-size: 1.8rem;
+            }
+        }
+        
+        /* Lead / Bajada */
+        .news-detail-lead {
+            font-size: 1.25rem;
+            color: #333;
+            line-height: 1.7;
+            margin-bottom: 2.5rem;
+            font-weight: 500;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        /* Artículo */
+        .news-detail-article {
+            background: #fff;
+            padding: 3rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        @media (max-width: 600px) {
+            .news-detail-article {
+                padding: 1.5rem;
+            }
+        }
+        .news-detail-article p {
+            color: #444;
+            line-height: 1.9;
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+        
+        /* Figura / Imagen */
+        .news-detail-figure {
+            margin: 2.5rem 0;
+            text-align: center;
+        }
+        .news-detail-figure img {
+            max-width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .news-detail-figure figcaption {
+            margin-top: 1rem;
+            color: #666;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+        
+        /* Citas */
+        .news-detail-quote {
+            background: linear-gradient(135deg, rgba(244, 177, 96, 0.1) 0%, rgba(89, 152, 119, 0.05) 100%);
+            border-left: 4px solid var(--primary-gold, #f4b160);
+            padding: 1.5rem 2rem;
+            margin: 2.5rem 0;
+            border-radius: 0 12px 12px 0;
+            font-style: italic;
+            color: #333;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+        .news-detail-quote.featured {
+            background: linear-gradient(135deg, var(--dark-navy, #1a2332) 0%, #0a0a0a 100%);
+            color: #fff;
+            border-left-color: var(--primary-gold, #f4b160);
+        }
+        .news-detail-quote cite {
+            display: block;
+            margin-top: 1rem;
+            font-style: normal;
+            color: var(--secondary-green, #599877);
+            font-weight: 600;
+        }
+        .news-detail-quote.featured cite {
+            color: var(--primary-gold, #f4b160);
+        }
+        
+        /* CTA al final */
+        .news-detail-cta {
+            margin-top: 3rem;
+            padding: 2.5rem;
+            background: linear-gradient(135deg, var(--dark-navy, #1a2332) 0%, #0a0a0a 100%);
+            border-radius: 16px;
+            text-align: center;
+        }
+        .news-detail-cta h3 {
+            color: #fff;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .news-detail-cta p {
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+        .news-detail-cta .btn {
+            background: linear-gradient(135deg, var(--primary-gold, #f4b160) 0%, #e09b40 100%);
+            color: var(--dark-navy, #1a2332);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .news-detail-cta .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(244, 177, 96, 0.3);
+        }
+        
+        /* Footer simplificado */
+        .news-footer {
+            background: var(--dark-navy, #1a2332);
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .news-footer p {
+            color: rgba(255,255,255,0.5);
+            font-size: 0.9rem;
+        }
+        .news-footer a {
+            color: var(--primary-gold, #f4b160);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body class="news-detail-page">
+    
+    <!-- Header -->
+    <header class="news-header">
+        <div class="container">
+            <a href="index.html">
+                <img src="assets/logos/Logotipo_MM_.png" alt="Grupo Matchmaking" class="news-header-logo">
+            </a>
+            <a href="index.html" class="news-header-back">
+                <i class="fas fa-arrow-left"></i>
+                Volver al inicio
+            </a>
+        </div>
+    </header>
+
+    <!-- Contenido -->
+    <main class="news-detail-content">
+        
+        <!-- Meta información -->
+        <div class="news-detail-meta">
+            <div class="news-detail-source">
+                <img src="assets/news/el-mercurio-logo.png" alt="El Mercurio" onerror="this.style.display='none'">
+                <span>El Mercurio</span>
+            </div>
+            <span class="news-detail-category">Estrategia y Gestión de Patrimonio</span>
+            <span class="news-detail-date"><i class="fas fa-calendar-alt"></i> Domingo 15 de marzo de 2026</span>
+        </div>
+        
+        <!-- Título -->
+        <h1>Multi Family Office y Activos Alternativos: Innovación en la gestión patrimonial</h1>
+        
+        <!-- Lead -->
+        <p class="news-detail-lead">En un escenario internacional de mayor volatilidad, tensiones geopolíticas e inflación persistente, los inversionistas replantean la gestión de su patrimonio. En ese contexto, los activos alternativos —en especial la deuda privada respaldada por activos reales— ganan protagonismo ante un sistema financiero más restrictivo en el crédito.</p>
+        
+        <!-- Artículo -->
+        <article class="news-detail-article">
+            <p>Durante décadas, la gestión patrimonial se concentró en renta fija y renta variable. Sin embargo, la creciente complejidad de los mercados globales, junto con episodios recurrentes de volatilidad, ha impulsado a muchos inversionistas a diversificar hacia instrumentos menos correlacionados con los mercados públicos.</p>
+            
+            <p>Hoy se observa una transformación estructural en la asignación de capital: los activos alternativos —private equity, infraestructura, real estate y deuda privada— han pasado de ser un complemento a convertirse en un componente relevante de las estrategias institucionales.</p>
+            
+            <p>Según estudios de la industria, los mercados privados superan los US$ 13 billones en activos bajo administración a nivel global. Dentro de este universo, el private credit o deuda privada supera los US$ 1,8 billones y se ha expandido aceleradamente por una razón práctica: el financiamiento bancario se ha vuelto más restrictivo, abriendo espacio para estructuras privadas de crédito respaldadas por activos reales.</p>
+            
+            <p>El crecimiento no responde solo a la búsqueda de rentabilidad. Tras mayores exigencias regulatorias y un entorno económico más incierto, el crédito bancario se volvió más selectivo, abriendo espacio para estructuras privadas de financiamiento con respaldo en activos reales.</p>
+            
+            <figure class="news-detail-figure">
+                <img src="assets/news/mercurio-ejecutivos.jpg" alt="Iván Barboza y Yanira Jerez" onerror="this.parentElement.style.display='none'">
+                <figcaption>Iván Barboza, gerente comercial de Pulso Inversor, y Yanira Jerez, directora comercial de Partners & Advisers, firmas pertenecientes al Grupo Matchmaking.</figcaption>
+            </figure>
+            
+            <blockquote class="news-detail-quote">
+                "La deuda privada respaldada por activos reales permite acceder a retornos superiores a los instrumentos tradicionales, pero con estructuras que pueden incorporar garantías concretas."
+                <cite>— Yanira Jerez, directora comercial de Partners & Advisers</cite>
+            </blockquote>
+            
+            <p>En paralelo, el modelo de Multi Family Office (MFO) comienza a consolidarse como una estructura relevante para ordenar y centralizar la gestión patrimonial de distintas familias e inversionistas. A diferencia de un family office tradicional —exclusivo de una familia—, un MFO comparte estructura, análisis y conocimiento entre clientes, ofreciendo una mirada más estratégica y global.</p>
+            
+            <p>Un punto clave para el mercado local: un MFO no es una empresa inmobiliaria ni se limita a administrar propiedades; su foco es coordinar la estrategia patrimonial completa.</p>
+            
+            <blockquote class="news-detail-quote">
+                "Muchas familias aún gestionan sus inversiones de manera fragmentada, operando con distintos bancos, corredoras o asesores financieros. El problema es que esa fragmentación muchas veces impide tener una estrategia patrimonial clara y coordinada."
+                <cite>— Yanira Jerez</cite>
+            </blockquote>
+            
+            <p>Desde esta perspectiva, el valor de un MFO no radica solo en seleccionar activos, sino en integrar decisiones financieras, inmobiliarias, tributarias y sucesorias bajo una misma mirada, especialmente cuando los alternativos requieren mayor seguimiento y estructuración.</p>
+            
+            <p>En Chile diversas estrategias comienzan a estructurarse en torno a activos reales y modelos de financiamiento alternativo.</p>
+            
+            <blockquote class="news-detail-quote">
+                "Hoy vemos un creciente interés por inversiones que combinan rentabilidad atractiva con respaldo concreto. En nuestro caso, por ejemplo, estructuramos operaciones respaldadas por activos inmobiliarios donde los inversionistas pueden acceder a retornos del orden de 1,3% mensual, siempre dentro de un marco legal claro y con garantías reales."
+                <cite>— Iván Barboza, gerente comercial de Pulso Inversor</cite>
+            </blockquote>
+            
+            <p>Según Barboza, "en la medida en que el financiamiento bancario se vuelve más restrictivo, surgen oportunidades para estructuras de deuda privada respaldadas por activos reales. Para los inversionistas, esto puede representar una alternativa interesante de diversificación, siempre que exista una adecuada estructuración del riesgo".</p>
+            
+            <p>A este escenario se suma el uso de herramientas basadas en inteligencia artificial para procesar información de múltiples mercados, apoyar el monitoreo y mejorar la reportabilidad del portafolio. Su aporte no es reemplazar la asesoría, sino fortalecerla, combinando análisis avanzado con criterio humano y personalización.</p>
+            
+            <blockquote class="news-detail-quote featured">
+                "La gestión patrimonial evoluciona hacia modelos más sofisticados, donde la diversificación, la visión estratégica y el acceso a activos alternativos se transforman en elementos centrales para la preservación y crecimiento del patrimonio."
+                <cite>— Grupo Matchmaking</cite>
+            </blockquote>
+            
+            <p>En un mundo donde los ciclos se vuelven más impredecibles, la gestión patrimonial evoluciona hacia modelos más sofisticados, donde la diversificación, la visión estratégica y el acceso a activos alternativos se transforman en elementos centrales para la preservación y crecimiento del patrimonio.</p>
+            
+            <!-- CTA -->
+            <div class="news-detail-cta">
+                <h3>¿Quieres saber más sobre gestión patrimonial?</h3>
+                <p>Nuestro equipo de expertos está listo para analizar tu situación particular.</p>
+                <a href="index.html#contacto" class="btn">
+                    <i class="fas fa-envelope"></i>
+                    Solicitar contacto
+                </a>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="news-footer">
+        <div class="footer-bottom">
+            <p class="footer-copyright">© 2026 SOCIEDAD GRUPO MATCHMAKING SPA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <script src="https://vhs-agentes.onrender.com/api/widget/35224608-8030-42c5-9ca9-2af5641c16b8/loader.js" async></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="linkedin-site-verification" content="2185e96f-a36a-4eb0-bd1b-e7910996217e" />
+    <title>Grupo Matchmaking - Multi Family Office</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"487a87e23025b0c255a5ccd52677bd9f"})});</script>
+    <style>
+        .success-message {
+            text-align: center;
+            padding: 3rem 2rem;
+            animation: fadeIn 0.5s ease;
+            background: rgba(201, 169, 98, 0.1);
+            border-radius: 12px;
+            border: 1px solid rgba(201, 169, 98, 0.3);
+        }
+        .success-message .success-icon {
+            font-size: 4rem;
+            color: #c9a962;
+            margin-bottom: 1.5rem;
+        }
+        .success-message h3 {
+            font-size: 1.8rem;
+            color: #1a1a2e;
+            margin-bottom: 1rem;
+        }
+        .success-message p {
+            color: #333;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Sección de Noticias */
+        .news {
+            padding: 6rem 0;
+            background: #f5f6f8;
+            position: relative;
+        }
+        .news h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--dark-navy, #1a2332);
+            margin-bottom: 3rem;
+        }
+        .news-grid {
+            display: grid;
+            gap: 2rem;
+        }
+        .news-card {
+            background: #fff;
+            border: 1px solid rgba(26, 35, 50, 0.1);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+        }
+        .news-featured {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+        }
+        @media (max-width: 900px) {
+            .news-featured {
+                grid-template-columns: 1fr;
+            }
+        }
+        .news-image {
+            position: relative;
+            min-height: 300px;
+            max-height: 600px;
+            background: linear-gradient(135deg, var(--dark-navy, #1a2332) 0%, #0a0a0a 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .news-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+        }
+        .news-source {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: rgba(255,255,255,0.95);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .news-source span {
+            color: var(--dark-navy, #1a2332);
+            font-weight: 700;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .news-content {
+            padding: 2rem;
+        }
+        .news-meta {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+        .news-category {
+            color: var(--primary-gold, #f4b160);
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .news-date {
+            color: #999;
+            font-size: 0.85rem;
+        }
+        .news-date i {
+            margin-right: 0.5rem;
+        }
+        .news-content h3 {
+            font-size: 1.6rem;
+            color: var(--dark-navy, #1a2332);
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+        .news-content > p {
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+        .news-quote {
+            background: linear-gradient(135deg, rgba(244, 177, 96, 0.1) 0%, rgba(89, 152, 119, 0.05) 100%);
+            border-left: 3px solid var(--primary-gold, #f4b160);
+            padding: 1rem 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 0 8px 8px 0;
+        }
+        .news-quote blockquote {
+            color: #444;
+            font-style: italic;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+        .news-quote cite {
+            display: block;
+            margin-top: 0.75rem;
+            color: var(--secondary-green, #599877);
+            font-size: 0.85rem;
+            font-style: normal;
+            font-weight: 600;
+        }
+        .news-highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .highlight-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(89, 152, 119, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            border: 1px solid rgba(89, 152, 119, 0.2);
+        }
+        .highlight-item i {
+            color: var(--secondary-green, #599877);
+        }
+        .highlight-item span {
+            color: #555;
+            font-size: 0.85rem;
+        }
+        .news-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-gold, #f4b160);
+            text-decoration: none;
+            font-weight: 600;
+            transition: gap 0.3s ease;
+        }
+        .news-link:hover {
+            gap: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Elfsight WhatsApp Chat | Untitled WhatsApp Chat -->
+<!-- <script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-1c79bf06-9f3d-4c1a-907e-0bab81c97bb4" data-elfsight-app-lazy></div> -->
+     
+    <!-- Header / Banner Principal -->
+    <header class="hero">
+        <div class="hero-background">
+            <img src="assets/backgrounds/GrupoMM_4.png" alt="Background" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <img src="assets/logos/Logotipo_MM_.png" alt="Grupo Matchmaking" class="hero-logo">
+                <h1>Multi Family Office,<br>expertos en planificación integral</h1>
+                <h2>Conectamos tu patrimonio con soluciones internacionales y visión global.</h2>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">
+                        <i class="fas fa-play"></i>
+                        Ver Video
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator" onclick="document.querySelector('.concepts').scrollIntoView({behavior: 'smooth'})">
+            <div class="scroll-text">Scroll para conocer más</div>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Sección de conceptos destacados -->
+    <section class="concepts">
+        <div class="container">
+            <h2 class="scroll-reveal">Nuestro enfoque combina experiencia<br>en tres dimensiones clave de Planificación</h2>
+            <div class="concepts-grid">
+                <div class="concept-item scroll-reveal">
+                    <div class="concept-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Planificación Financiera</h3>
+                    <p>Estructuras de inversión y planificación patrimonial integral.</p>
+                </div>
+                <div class="concept-item scroll-reveal">
+                    <div class="concept-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Eficiencia Tributaria</h3>
+                    <p>Soluciones legales y fiscales estratégicas especializadas.</p>
+                </div>
+                <div class="concept-item scroll-reveal">
+                    <div class="concept-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>De Resguardo</h3>
+                    <p>Protección integral de vida, salud y patrimonio familiar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bajada institucional -->
+    <section class="institutional">
+        <div class="container">
+            <div class="institutional-content">
+                <img src="assets/logos/Isotipo_MM_.png" alt="Isotipo Matchmaking" class="institutional-logo scroll-reveal-left">
+                <div class="institutional-text scroll-reveal-right">
+                    <h3>"Haciendo conexiones para soluciones integrales."</h3>
+                    <p>Grupo Matchmaking reúne empresas especializadas que ofrecen una cobertura completa para tus decisiones financieras, legales y de inversión.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estructura del grupo / Marcas asociadas -->
+    <section class="companies">
+        <div class="glow-orb glow-orb-1"></div>
+        <div class="glow-orb glow-orb-2"></div>
+        <div class="glow-orb glow-orb-3"></div>
+        <div class="glow-orb glow-orb-4"></div>
+        <div class="glow-orb glow-orb-5"></div>
+        <div class="container">
+            <h2 class="scroll-reveal">Empresas que forman parte<br>del Grupo Matchmaking</h2>
+            <div class="companies-grid">
+                <div class="company-card scroll-reveal-scale">
+                    <div class="company-logo">
+                        <img src="assets/logos/brands/partners-advisers.png" alt="Partners & Advisers">
+                    </div>
+                    <p>Consultora boutique de inversiones, especializada en Wealth Management, certificada por la CMF.</p>
+                    <a href="https://partnersadvisers.cl/" class="company-link" target="_blank">Visitar sitio</a>
+                </div>
+                <div class="company-card scroll-reveal-scale">
+                    <div class="company-logo">
+                        <img src="assets/logos/brands/fidelium.png" alt="Fidelium">
+                    </div>
+                    <p>Consultora en servicios legales, tributarios y de evaluación de empresas.</p>
+                    <a href="https://fidelium.cl/" class="company-link" target="_blank">Visitar sitio</a>
+                </div>
+                <div class="company-card scroll-reveal-scale">
+                    <div class="company-logo">
+                        <img src="assets/logos/brands/pulso-inversor.png" alt="Pulso Inversor">
+                    </div>
+                    <p>Expertos en activos alternativos inmobiliarios con estructuras de inversión respaldadas.</p>
+                    <a href="https://pulsoinversor.cl/" class="company-link" target="_blank">Visitar sitio</a>
+                </div>
+                <div class="company-card scroll-reveal-scale">
+                    <div class="company-logo">
+                       <img src="assets/logos/brands/gps.png" alt="GPS">
+                    </div>
+                    <p>Broker y plataforma internacional en Montevideo, especializada en gestión offshore.</p>
+                    <a href="https://gpspartners.com.uy/" class="company-link" target="_blank">Visitar sitio</a>
+                </div>
+                <div class="company-card scroll-reveal-scale">
+                    <div class="company-logo">
+                        <img src="assets/logos/brands/resprot.png" alt="Resprot">
+                    </div>
+                    <p>Consultora experta en planificación y resguardo de vida y salud.</p>
+                    <a href="#" class="company-link" target="_blank">Visitar sitio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Noticias / Prensa -->
+    <section class="news">
+        <div class="container">
+            <h2 class="scroll-reveal">Grupo Matchmaking<br>en los medios</h2>
+            <div class="news-grid">
+                <article class="news-card news-featured scroll-reveal-scale">
+                    <div class="news-image">
+                        <img src="assets/news/mercurio-mfo-2026.jpg" alt="Artículo El Mercurio - Multi Family Office">
+                        <div class="news-source">
+                            <span>El Mercurio</span>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-category">Estrategia y Gestión de Patrimonio</span>
+                            <span class="news-date"><i class="fas fa-calendar-alt"></i> 15 de marzo de 2026</span>
+                        </div>
+                        <h3>Multi Family Office y Activos Alternativos: Innovación en la gestión patrimonial</h3>
+                        <p>En un escenario internacional de mayor volatilidad, tensiones geopolíticas e inflación persistente, los inversionistas replantean la gestión de su patrimonio. Los activos alternativos —en especial la deuda privada respaldada por activos reales— ganan protagonismo ante un sistema financiero más restrictivo en el crédito.</p>
+                        <div class="news-quote">
+                            <blockquote>
+                                "La deuda privada respaldada por activos reales permite acceder a retornos superiores a los instrumentos tradicionales, pero con estructuras que pueden incorporar garantías concretas."
+                            </blockquote>
+                            <cite>— Yanira Jerez, Directora Comercial de Partners & Advisers</cite>
+                        </div>
+                        <div class="news-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-chart-pie"></i>
+                                <span>US$ 13 billones en activos alternativos globales</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-hand-holding-usd"></i>
+                                <span>US$ 1,8 billones en deuda privada</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-percentage"></i>
+                                <span>Retornos del orden de 1,3% mensual</span>
+                            </div>
+                        </div>
+                        <a href="noticia-mfo-activos-alternativos.html" class="news-link">
+                            Leer artículo completo <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de contacto rápido -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info scroll-reveal-left">
+                    <h2>Conversemos sobre<br>tu estrategia patrimonial</h2>
+                    <p>Nuestro equipo de expertos está listo para analizar tu situación particular y diseñar soluciones personalizadas que maximicen el potencial de tu patrimonio.</p>
+                    <div class="contact-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Consulta inicial sin costo</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Análisis integral personalizado</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Propuesta de soluciones específicas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container scroll-reveal-right">
+                    <form class="contact-form" id="contactForm" action="https://formsubmit.co/ajax/contacto@grupomm.cl" method="POST">
+                        <!-- Formsubmit.co configuración -->
+                        <input type="hidden" name="_subject" value="Nuevo contacto desde grupomm.cl">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="text" name="_honey" style="display:none">
+                        
+                        <div class="form-group">
+                            <input type="text" name="nombre" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Correo electrónico" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="area-interes">
+                                <option value="">Selecciona tu área de interés</option>
+                                <option value="tributacion">Tributación</option>
+                                <option value="financiera">Planificación Financiera</option>
+                                <option value="resguardo">Protección y Resguardo</option>
+                                <option value="inversion">Estructuras de Inversión</option>
+                                <option value="offshore">Gestión Offshore</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="mensaje" placeholder="Mensaje breve" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Solicitar contacto</button>
+                    </form>
+                    
+                    <!-- Mensaje de éxito -->
+                    <div id="successMessage" class="success-message" style="display: none;">
+                        <div class="success-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>¡Gracias por contactarnos!</h3>
+                        <p>Hemos recibido tu mensaje. Nuestro equipo se pondrá en contacto contigo a la brevedad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/logos/Logotipo_MM_.png" alt="Grupo Matchmaking" class="footer-logo">
+                    <p class="footer-tagline">Multi Family Office</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contacto</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:contacto@grupomm.cl">contacto@grupomm.cl</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+56233571087">+56 2 3357 1087</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Los Militares 5890, Of. 304<br>Las Condes, Santiago, Chile</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 SOCIEDAD GRUPO MATCHMAKING SPA. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Video -->
+    <div id="videoModal" class="video-modal">
+        <div class="video-modal-overlay"></div>
+        <div class="video-modal-content">
+            <button class="video-modal-close" aria-label="Cerrar video">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="video-container">
+                <iframe id="modalVideo"
+                    width="100%"
+                    height="100%"
+                    src=""
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Efecto Parallax inverso para el hero background
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const heroBackground = document.querySelector('.hero-background');
+            const parallaxSpeed = -0.5; // Negativo para efecto inverso
+            
+            if (heroBackground && scrolled <= window.innerHeight) {
+                heroBackground.style.transform = `translateY(${scrolled * parallaxSpeed}px)`;
+            }
+        });
+
+        // Animaciones de scroll reveal
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    // Eliminar el transition-delay después de la animación inicial
+                    setTimeout(() => {
+                        entry.target.style.transitionDelay = '0s';
+                    }, 800); // Esperar a que termine la animación (0.8s)
+                }
+            });
+        }, observerOptions);
+
+        // Observar todos los elementos con clases de animación
+        document.addEventListener('DOMContentLoaded', function() {
+            const revealElements = document.querySelectorAll(
+                '.scroll-reveal, .scroll-reveal-left, .scroll-reveal-right, .scroll-reveal-scale'
+            );
+            
+            revealElements.forEach((el, index) => {
+                // Reducir el delay para elementos de la sección de contacto
+                const isContactSection = el.closest('.contact');
+                const delay = isContactSection ? index * 0.05 : index * 0.1;
+                
+                el.style.transitionDelay = `${delay}s`;
+                observer.observe(el);
+            });
+        });
+
+        // Funcionalidad del Modal de Video
+        const videoModal = document.getElementById('videoModal');
+        const modalVideo = document.getElementById('modalVideo');
+        const videoButton = document.querySelector('.btn-primary');
+        const closeButton = document.querySelector('.video-modal-close');
+        const modalOverlay = document.querySelector('.video-modal-overlay');
+        const youtubeVideoUrl = 'https://www.youtube.com/embed/uzV4R0NoJfc?autoplay=1&rel=0';
+
+        // Abrir modal
+        function openVideoModal() {
+            videoModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            modalVideo.src = youtubeVideoUrl;
+        }
+
+        // Cerrar modal
+        function closeVideoModal() {
+            videoModal.classList.remove('active');
+            document.body.style.overflow = '';
+            modalVideo.src = '';
+        }
+
+        // Event listeners
+        videoButton.addEventListener('click', openVideoModal);
+        closeButton.addEventListener('click', closeVideoModal);
+        modalOverlay.addEventListener('click', closeVideoModal);
+
+        // Cerrar con tecla Escape
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && videoModal.classList.contains('active')) {
+                closeVideoModal();
+            }
+        });
+
+        // Formulario de contacto - Envío AJAX
+        const contactForm = document.getElementById('contactForm');
+        const successMessage = document.getElementById('successMessage');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+            submitBtn.disabled = true;
+
+            fetch(contactForm.action, {
+                method: 'POST',
+                body: new FormData(contactForm),
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    contactForm.style.display = 'none';
+                    successMessage.style.display = 'block';
+                } else {
+                    throw new Error('Error en el envío');
+                }
+            })
+            .catch(error => {
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+                alert('Hubo un error al enviar el mensaje. Por favor intenta nuevamente.');
+            });
+        });
+    </script>
+</body>
+</html>
